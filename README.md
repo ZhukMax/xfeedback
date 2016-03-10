@@ -5,7 +5,7 @@ We can use this extra-component for comments, reviews or another feedback on sit
 For use Component, you need add to content of page or to chunck [[!xFeedback]] snippet with options.
 
 OPTIONS:
-* &form=`1` - Output on page Form for feedback or not; default `0`
+* &form=\`1\` - Output on page Form for feedback or not; default `0`
 * &count=`10` - How many comments output on page, if `0`, then output all comments; default `0`
 * &templ=`itemTemplate` - Template for every output comment; default `xFeedback.item`. You can update default chunck or add new. If you need deferent templates for comments on deferent pages or deferent places of one page, you can create two or more chuncks and use them.
 * &random=`1` - Output random comments; default `0`
