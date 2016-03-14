@@ -160,6 +160,8 @@ class xFeedback {
 
 		foreach ($items as $item) {
     		$itemArray = $item->toArray();
+			if (!$itemArray['photo'])
+				$itemArray['photo'] = '/assets/components/xfeedback/images/user.png';
     		$output .= $this->modx->getChunk($templ, $itemArray);
 		}
 
