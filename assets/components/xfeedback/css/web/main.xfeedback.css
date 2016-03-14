@@ -113,3 +113,26 @@
 	font-size: .8em;
 	color: #777;
 }
+.b-xfeedback-comment .b-stars {
+	height: 20px;
+	background: url('../../../images/s71a7fdede6.png') repeat;
+	background-position: 0 -20px;
+}
+.b-xfeedback-comment .stars-count-is0 {
+	width: 0;
+}
+.b-xfeedback-comment .stars-count-is1 {
+	width: 22px;
+}
+.b-xfeedback-comment .stars-count-is2 {
+	width: 44px;
+}
+.b-xfeedback-comment .stars-count-is3 {
+	width: 66px;
+}
+.b-xfeedback-comment .stars-count-is4 {
+	width: 88px;
+}
+.b-xfeedback-comment .stars-count-is5 {
+	width: 110px;
+}
