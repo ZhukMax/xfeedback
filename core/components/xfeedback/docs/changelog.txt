@@ -2,12 +2,10 @@ Changelog for xFeedback.
 
 1.0.0-beta
 ==============
-- Opimized for MODX 2.3
+- Opimized for MODX 2.4
 - Improved processors
 - Disabled plugin and system settings
 - Improved UI
 - Added grid actions
-- Added icons in menu
 - Added search in grid
 - Grid sorting
-- Enable and disable actions
