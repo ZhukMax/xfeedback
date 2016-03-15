@@ -1,8 +1,14 @@
 Changelog for xFeedback.
 
+1.0.0
+==============
+- Fixed bugs
+- Add default image
+- Output stars
+
 1.0.0-beta
 ==============
-- Opimized for MODX 2.4
+- Opimized for MODX >2.3
 - Improved processors
 - Disabled plugin and system settings
 - Improved UI
