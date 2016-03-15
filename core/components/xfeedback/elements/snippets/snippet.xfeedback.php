@@ -3,7 +3,7 @@
 if (!$xFeedback = $modx->getService('xfeedback', 'xFeedback', $modx->getOption('xfeedback_core_path', null, $modx->getOption('core_path') . 'components/xfeedback/') . 'model/xfeedback/', $scriptProperties))
 	return 'Could not load xFeedback class!';
 
-$pathToCss = $xFeedback->config['cssUrl'].'/web/';
+$pathToCss = $xFeedback->config['cssUrl'].'web/';
 $output = '<link rel="stylesheet" type="text/css" href="'.$pathToCss.'main.xfeedback.css">
 ';
 $row = array();
