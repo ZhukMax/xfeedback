@@ -25,7 +25,7 @@
 
 /*sprite with stars*/
 #reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
-  background: url('../../../images/s71a7fdede6.png') no-repeat;
+  background: url('../../images/s71a7fdede6.png') no-repeat;
 }
 
 #reviewStars-input {
@@ -115,7 +115,7 @@
 }
 .b-xfeedback-comment .b-stars {
 	height: 20px;
-	background: url('../../../images/s71a7fdede6.png') repeat;
+	background: url('../../images/s71a7fdede6.png') repeat;
 	background-position: 0 -20px;
 }
 .b-xfeedback-comment .stars-count-is0 {
