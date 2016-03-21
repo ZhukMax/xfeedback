@@ -75,29 +75,6 @@ if ($object->xpdo) {
             break;
 
         case xPDOTransport::ACTION_UNINSTALL:
-            // Remove tables if it's need
-            /*
-            $modelPath = $modx->getOption('xfeedback_core_path', null, $modx->getOption('core_path') . 'components/xfeedback/') . 'model/';
-            $modx->addPackage('xfeedback', $modelPath);
-
-            $manager = $modx->getManager();
-            $objects = array();
-            $schemaFile = MODX_CORE_PATH . 'components/xfeedback/model/schema/xfeedback.mysql.schema.xml';
-            if (is_file($schemaFile)) {
-                $schema = new SimpleXMLElement($schemaFile, 0, true);
-                if (isset($schema->object)) {
-                    foreach ($schema->object as $object) {
-                        $objects[] = (string)$object['class'];
-                    }
-                }
-                unset($schema);
-            } else {
-                $modx->log(modX::LOG_LEVEL_ERROR, 'Could not get classes from schema file.');
-            }
-            foreach ($objects as $tmp) {
-                $manager->removeObjectContainer($tmp);
-            }
-            */
             break;
     }
 }

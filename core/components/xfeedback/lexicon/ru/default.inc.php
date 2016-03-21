@@ -9,6 +9,7 @@ $_lang['xfeedback_items'] = 'Комментарии';
 $_lang['xfeedback_item_id'] = 'Id';
 $_lang['xfeedback_item_name'] = 'Имя';
 $_lang['xfeedback_item_description'] = 'Текст комментария';
+$_lang['xfeedback_item_button'] = 'Оставить комментарий';
 $_lang['xfeedback_item_active'] = 'Активно';
 $_lang['xfeedback_item_rating'] = 'Рейтинг';
 $_lang['xfeedback_item_photo'] = 'Фотография';

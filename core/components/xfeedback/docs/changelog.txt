@@ -1,5 +1,14 @@
 Changelog for xFeedback.
 
+1.1.0
+==============
+- Add social network's accounts
+
+1.0.1
+==============
+- Set default lang English
+- Fixed snippet
+
 1.0.0
 ==============
 - Fixed bugs

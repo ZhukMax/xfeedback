@@ -1,4 +1,17 @@
 <?php
+/**
+ * xFeedback
+ *
+ * PROPERTIES:
+ *
+ * &random integer optional
+ * &count integer optional. Default: 0
+ * &templ string. Default: xFeedback.item
+ * &form integer optional
+ * &sort string optional
+ * &dir string optional
+ *
+ */
 /** @var xFeedback $xFeedback */
 if (!$xFeedback = $modx->getService('xfeedback', 'xFeedback', $modx->getOption('xfeedback_core_path', null, $modx->getOption('core_path') . 'components/xfeedback/') . 'model/xfeedback/', $scriptProperties))
 	return 'Could not load xFeedback class!';
@@ -9,12 +22,16 @@ $output = '<link rel="stylesheet" type="text/css" href="'.$pathToCss.'main.xfeed
 $row = array();
 
 /* Vars of snippet */
-$rand = $random == 1 ? true : false;
-$count = !$count ? 0 : $count;
-$templ = !$templ ? 'xFeedback.item' : $templ;
-$wform = $form == 1 ? true : false;
+$rand = $modx->getOption('random', $scriptProperties, false);
+$count = $modx->getOption('count', $scriptProperties, 0);
+$templ = $modx->getOption('templ', $scriptProperties, 'xFeedback.item');
+$wform = $modx->getOption('form', $scriptProperties, false);
+$sort = $modx->getOption('sort', $scriptProperties, false);
 if ($sort) $filters['sort'] = $sort;
+$dir = $modx->getOption('dir', $scriptProperties, false);
 if ($dir) $filters['dir'] = $dir;
+
+$comments = $xFeedback->outputItems($count, $templ, $filters, $rand);
 
 if ($wform == true) {
 	if ($_POST['new-feedback']) {
@@ -27,8 +44,8 @@ if ($wform == true) {
 	$output .= $modx->getChunk('xFeedback.form', $row);
 
 	// Output comments
-	$output .= $xFeedback->outputItems($count, $templ, $filters, $rand);
+	$output .= $comments;
 
-} else $output .= $xFeedback->outputItems($count, $templ, $filters, $rand);
+} else $output .= $comments;
 
 return $output;
