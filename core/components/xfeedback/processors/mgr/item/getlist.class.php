@@ -8,7 +8,6 @@ class xFeedbackItemGetListProcessor extends modObjectGetListProcessor {
 	public $classKey = 'xFeedbackItem';
 	public $defaultSortField = 'id';
 	public $defaultSortDirection = 'DESC';
-	//public $permission = 'list';
 
 
 	/**
@@ -58,7 +57,6 @@ class xFeedbackItemGetListProcessor extends modObjectGetListProcessor {
 			'cls' => '',
 			'icon' => 'icon icon-edit',
 			'title' => $this->modx->lexicon('xfeedback_item_update'),
-			//'multiple' => $this->modx->lexicon('xfeedback_items_update'),
 			'action' => 'updateItem',
 			'button' => true,
 			'menu' => true,

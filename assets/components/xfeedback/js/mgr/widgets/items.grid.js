@@ -190,12 +190,12 @@ Ext.extend(xFeedback.grid.Items, MODx.grid.Grid, {
 			header: _('xfeedback_item_id'),
 			dataIndex: 'id',
 			sortable: true,
-			width: 30
+			width: 20
 		}, {
 			header: _('xfeedback_item_name'),
 			dataIndex: 'name',
 			sortable: true,
-			width: 150,
+			width: 100,
 		}, {
 			header: _('xfeedback_item_description'),
 			dataIndex: 'comment',
@@ -211,7 +211,7 @@ Ext.extend(xFeedback.grid.Items, MODx.grid.Grid, {
 			dataIndex: 'active',
 			renderer: xFeedback.utils.renderBoolean,
 			sortable: true,
-			width: 50,
+			width: 30,
 		},{
 			header: _('xfeedback_item_photo'),
 			dataIndex: 'photo',

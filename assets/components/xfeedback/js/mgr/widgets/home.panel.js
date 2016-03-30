@@ -3,12 +3,6 @@ xFeedback.panel.Home = function (config) {
 	Ext.apply(config, {
 		baseCls: 'modx-formpanel',
 		layout: 'anchor',
-		/*
-		 stateful: true,
-		 stateId: 'xfeedback-panel-home',
-		 stateEvents: ['tabchange'],
-		 getState:function() {return {activeTab:this.items.indexOf(this.getActiveTab())};},
-		 */
 		hideMode: 'offsets',
 		items: [{
 			html: '<h2>' + _('xfeedback') + '</h2>',

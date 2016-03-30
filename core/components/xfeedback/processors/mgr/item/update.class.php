@@ -7,7 +7,6 @@ class xFeedbackItemUpdateProcessor extends modObjectUpdateProcessor {
 	public $objectType = 'xFeedbackItem';
 	public $classKey = 'xFeedbackItem';
 	public $languageTopics = array('xfeedback');
-	//public $permission = 'save';
 
 
 	/**
@@ -33,13 +32,6 @@ class xFeedbackItemUpdateProcessor extends modObjectUpdateProcessor {
 		$name = trim($this->getProperty('name'));
 		if (empty($id)) {
 			return $this->modx->lexicon('xfeedback_item_err_ns');
-		}
-
-		if (empty($name)) {
-			$this->modx->error->addField('name', $this->modx->lexicon('xfeedback_item_err_name'));
-		}
-		elseif ($this->modx->getCount($this->classKey, array('name' => $name, 'id:!=' => $id))) {
-			$this->modx->error->addField('name', $this->modx->lexicon('xfeedback_item_err_ae'));
 		}
 
 		return parent::beforeSet();

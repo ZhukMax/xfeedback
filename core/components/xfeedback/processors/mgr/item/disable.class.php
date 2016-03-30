@@ -7,7 +7,6 @@ class xFeedbackItemDisableProcessor extends modObjectProcessor {
 	public $objectType = 'xFeedbackItem';
 	public $classKey = 'xFeedbackItem';
 	public $languageTopics = array('xfeedback');
-	//public $permission = 'save';
 
 
 	/**

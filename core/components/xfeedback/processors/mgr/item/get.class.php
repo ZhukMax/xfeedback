@@ -7,7 +7,6 @@ class xFeedbackItemGetProcessor extends modObjectGetProcessor {
 	public $objectType = 'xFeedbackItem';
 	public $classKey = 'xFeedbackItem';
 	public $languageTopics = array('xfeedback:default');
-	//public $permission = 'view';
 
 
 	/**
