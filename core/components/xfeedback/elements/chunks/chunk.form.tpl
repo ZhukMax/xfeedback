@@ -26,15 +26,15 @@
 		<input name="userfile" type="file">
 	</div>
 	<div class="form-group">
-		<label>[[%xfeedback_item_name? &language=`[[++cultureKey]]`]]*</label>
+		<label>[[+xfeedback_item_name]]*</label>
 		<input type="text" name="name" placeholder="">
 	</div>
 
 	<div class="form-group">
-		<label>[[%xfeedback_item_description? &language=`[[++cultureKey]]`]]*</label>
+		<label>[[+xfeedback_item_description]]*</label>
 		<textarea name="text"></textarea>
 	</div>
 
-	<input type="submit" value="[[%xfeedback_item_button? &language=`[[++cultureKey]]`]]">
+	<input type="submit" value="[[+xfeedback_item_button]]">
 
 </form>

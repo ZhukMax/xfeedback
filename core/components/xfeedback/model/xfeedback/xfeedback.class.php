@@ -162,7 +162,10 @@ class xFeedback {
     		$itemArray = $item->toArray();
 			if (!$itemArray['photo'])
 				$itemArray['photo'] = '/assets/components/xfeedback/images/user.png';
-    		$output .= $this->modx->getChunk($templ, $itemArray);
+    		$itemArray['xfeedback_item_name'] = $this->modx->lexicon('xfeedback_item_name');
+    		$itemArray['xfeedback_item_description'] = $this->modx->lexicon('xfeedback_item_description');
+    		$itemArray['xfeedback_item_button'] = $this->modx->lexicon('xfeedback_item_button');
+			$output .= $this->modx->getChunk($templ, $itemArray);
 		}
 
 		return $output;
