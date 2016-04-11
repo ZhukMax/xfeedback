@@ -8,10 +8,7 @@ class xFeedbackItemUpdateProcessor extends modObjectUpdateProcessor {
 	public $classKey = 'xFeedbackItem';
 	public $languageTopics = array('xfeedback');
 
-
 	/**
-	 * We doing special check of permission
-	 * because of our objects is not an instances of modAccessibleObject
 	 *
 	 * @return bool|string
 	 */
@@ -22,7 +19,6 @@ class xFeedbackItemUpdateProcessor extends modObjectUpdateProcessor {
 
 		return true;
 	}
-
 
 	/**
 	 * @return bool

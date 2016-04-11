@@ -7,13 +7,11 @@ class xFeedbackHomeManagerController extends xFeedbackMainController {
 	/* @var xFeedback $xFeedback */
 	public $xFeedback;
 
-
 	/**
 	 * @param array $scriptProperties
 	 */
 	public function process(array $scriptProperties = array()) {
 	}
-
 
 	/**
 	 * @return null|string
@@ -21,7 +19,6 @@ class xFeedbackHomeManagerController extends xFeedbackMainController {
 	public function getPageTitle() {
 		return $this->modx->lexicon('xfeedback');
 	}
-
 
 	/**
 	 * @return void
@@ -40,7 +37,6 @@ class xFeedbackHomeManagerController extends xFeedbackMainController {
 		});
 		</script>');
 	}
-
 
 	/**
 	 * @return string

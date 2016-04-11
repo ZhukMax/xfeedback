@@ -9,10 +9,7 @@ class xFeedbackItemGetListProcessor extends modObjectGetListProcessor {
 	public $defaultSortField = 'id';
 	public $defaultSortDirection = 'DESC';
 
-
 	/**
-	 * * We doing special check of permission
-	 * because of our objects is not an instances of modAccessibleObject
 	 *
 	 * @return boolean|string
 	 */
@@ -23,7 +20,6 @@ class xFeedbackItemGetListProcessor extends modObjectGetListProcessor {
 
 		return true;
 	}
-
 
 	/**
 	 * @param xPDOQuery $c
@@ -41,7 +37,6 @@ class xFeedbackItemGetListProcessor extends modObjectGetListProcessor {
 
 		return $c;
 	}
-
 
 	/**
 	 * @param xPDOObject $object

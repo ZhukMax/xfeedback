@@ -48,11 +48,10 @@ Ext.extend(xFeedback.window.CreateItem, MODx.Window, {
 			id: config.id + '-photo',
 			anchor: '99%',
 		}, {
-			xtype: 'datefield',
+			xtype: 'textfield',
 			fieldLabel: _('xfeedback_item_pub_date'),
 			name: 'pub_date',
 			id: config.id + '-pub_date',
-			format: 'Y-m-d H:m:s',
 			anchor: '99%',
             flex: 2,
 		}, {
@@ -124,11 +123,10 @@ Ext.extend(xFeedback.window.UpdateItem, MODx.Window, {
 			id: config.id + '-photo',
 			anchor: '99%',
 		}, {
-			xtype: 'datefield',
+			xtype: 'textfield',
 			fieldLabel: _('xfeedback_item_pub_date'),
 			name: 'pub_date',
 			id: config.id + '-pub_date',
-			format: 'Y-m-d H:m:s',
 			anchor: '99%',
             flex: 2,
 		}, {

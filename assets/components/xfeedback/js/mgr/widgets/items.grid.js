@@ -182,7 +182,7 @@ Ext.extend(xFeedback.grid.Items, MODx.grid.Grid, {
 	},
 
 	getFields: function (config) {
-		return ['id', 'name', 'comment', 'rating', 'active', 'photo', 'actions'];
+		return ['id', 'name', 'comment', 'rating', 'active', 'pub_date', 'photo', 'actions'];
 	},
 
 	getColumns: function (config) {
@@ -190,12 +190,12 @@ Ext.extend(xFeedback.grid.Items, MODx.grid.Grid, {
 			header: _('xfeedback_item_id'),
 			dataIndex: 'id',
 			sortable: true,
-			width: 20
+			width: 30
 		}, {
 			header: _('xfeedback_item_name'),
 			dataIndex: 'name',
 			sortable: true,
-			width: 100,
+			width: 150,
 		}, {
 			header: _('xfeedback_item_description'),
 			dataIndex: 'comment',
@@ -212,6 +212,11 @@ Ext.extend(xFeedback.grid.Items, MODx.grid.Grid, {
 			renderer: xFeedback.utils.renderBoolean,
 			sortable: true,
 			width: 30,
+		},{
+			header: _('xfeedback_item_pub_date'),
+			dataIndex: 'pub_date',
+			sortable: true,
+			width: 80,
 		},{
 			header: _('xfeedback_item_photo'),
 			dataIndex: 'photo',
